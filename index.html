@@ -5,8 +5,63 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Конвертор величин на JavaScript</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h1 class="display-3 text-center">Конвертор величин</h1>
+				<h2 class="display-4 text-center">Конвертор километров</h2>
+				<form>
+					<div class="form-group">
+						<input id="kmInput" class="form-control form-control-lg" type="number" placeholder="Введите километры...">
+					</div>
+				</form>
+				<div id="output">
+					<div class="card alert alert-warning">
+						<div class="card-block">
+							<h4>Метры: </h4>
+							<div id="mOutput"></div>
+						</div>
+					</div>
+					<div class="card alert alert-primary">
+						<div class="card-block">
+							<h4>Сантиметры: </h4>
+							<div id="smOutput"></div>
+						</div>
+					</div>
+					<div class="card alert alert-success">
+						<div class="card-block">
+							<h4>Милиметры: </h4>
+							<div id="mmOutput"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="display-4 text-center">Конвертор килограммов</h2>
+				<form>
+					<div class="form-group">
+						<input id="kgInput" class="form-control form-control-lg" type="number" placeholder="Введите килограммы...">
+					</div>
+				</form>
+				<div id="output">
+					<div class="card alert alert-warning">
+						<div class="card-block">
+							<h4>Граммы: </h4>
+							<div id="gOutput"></div>
+						</div>
+					</div>
+					<div class="card alert alert-primary">
+						<div class="card-block">
+							<h4>Милиграммы: </h4>
+							<div id="mgOutput"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html>
